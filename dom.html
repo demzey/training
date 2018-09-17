@@ -1,0 +1,36 @@
+<html>
+
+<div>
+    <h2 id ="id1">This text should be remove</h2>
+    <h3 id ='id2'>This text should be remove</h3>
+    <h4 id ='id3'>123456</h4>
+</div>
+
+<script>
+
+
+const remove = () => {
+    id1.innerHTML = '';
+}
+
+const removeAgain = () => {
+    id2.parentNode.removeChild(id2);
+}
+
+const getText = () => {    
+    alert(id2.textContent);
+}
+
+console.log(document);
+console.log(document.body.childNodes);
+
+</script>
+
+<input onClick="remove()" type="button" value="Click to remove text!">
+
+<input onClick="removeAgain()" type="button" value="Click to remove text!">
+
+<input onClick="getText()" type="button" value="Click to get Text">
+
+</html>
+

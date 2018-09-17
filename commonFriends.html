@@ -1,0 +1,23 @@
+<html>
+
+<script>
+
+let demzeyFriends = ['Pong', 'Pork', 'Jeje', 'Floyd'];
+
+let jediFriends = ['Pong', 'Pork', 'Jaki'];
+
+let mutualFriends = [];
+
+for (let i = 0; i < demzeyFriends.length; i++) {
+  for(let g = 0; g <jediFriends.length; g++) {
+  if (demzeyFriends[i] === jediFriends[g]) {
+    mutualFriends.push(jediFriends[g]);
+    //console.log();
+  }
+}
+}
+console.log(mutualFriends);
+
+</script>
+
+</html>

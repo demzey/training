@@ -1,0 +1,134 @@
+<html>
+
+<script>
+
+let plusSomething = (x, y = 5) => {
+
+    return x + y;
+
+}
+
+plusSomething(3);
+
+
+let student = {
+    name: 'Demzey',
+    age: 29,
+    address: 'Las Pinas'
+}
+
+console.log(student);
+
+// .push()
+let todoList = [];
+function remember(task) {
+  todoList.push(task);
+}
+
+// .shift()
+function getTask() {
+  return todoList.shift();
+}
+
+// .unshift()
+function rememberUrgently(task) {
+  todoList.unshift(task);
+}
+
+let fruits = ['coconut', 2, 'apple', 'orange', 5];
+console.log(fruits.length);
+console.log(fruits);
+
+// .splice
+fruits.splice(4, 1, 'guava');
+console.log(fruits);
+
+// .slice
+console.log("Demzey".slice(0, 4));
+
+// .indexOf
+console.log('01234567890'.indexOf('789'));
+
+
+// let max = (...numbers) => {
+//     let result = Infinity;
+//     for (let number of numbers) {
+//         if (number < result) result = number;
+//     }
+//     return result;
+// }
+// console.log(max(55, 6, 4, -8, 11));
+
+// console.log(range(1, 10));
+
+function monitorCount(rows, columns) {
+  return rows * columns;
+}
+console.log(monitorCount);
+
+function costOfMonitors(rows, columns) {
+  return monitorCount(rows, columns) * 200;
+}
+
+console.log(costOfMonitors);
+
+const totalCost = costOfMonitors(5, 4);
+
+console.log(totalCost);
+
+const getUserChoice = (userInput) => {
+  userInput = userInput.toLowerCase();
+  if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors') {
+    console.log(userInput);
+    return userInput;
+} else {
+  console.log('User Input is invalid');
+}
+}
+getUserChoice('ROck');
+
+const getComputerChoice = (computerInput) => {
+    let computerChoice = '';
+    computerInput = (Math.floor(Math.random() * Math.floor(computerInput)));
+    if (computerInput === 1) {
+        computerChoice = 'rock';
+    } else if (computerInput === 2) {
+        computerChoice = 'paper';
+    } else {
+        computerChoice = 'scissors';
+    } console.log(computerChoice);return computerChoice;
+}
+
+getComputerChoice(3);
+
+let RockPaperScissors = () => {
+    if (getUserChoice  === 'rock' && getComputerChoice === 'paper') {
+        console.log('The computer wins!')
+    }
+}
+
+console.log(RockPaperScissors());
+
+const random = Math.floor(Math.random() * 3);
+console.log(random);
+
+const cards = ['diamond', 'spade', 'heart', 'club'];
+console.log(cards.indexOf('spade'));
+let currentCard;
+while (currentCard === cards['spade']) {
+currentCard = cards[Math.floor(Math.random() * 4)];
+
+}
+
+//Write your code below
+
+
+
+
+
+
+</script>
+
+
+</html>
+

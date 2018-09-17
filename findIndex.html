@@ -1,0 +1,21 @@
+<html>
+
+<script>
+
+const animals = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
+
+const foundAnimal = animals.findIndex(animal => {
+  return animal === 'elephant';
+});
+console.log(foundAnimal);
+const startsWithS = animals.findIndex(animal => {
+  for (let i = 0; i < animal.length; i++) {
+    return animal[0] === 's' ? true : false;
+    return animal[i];
+  }
+});
+console.log(startsWithS);
+
+</script>
+
+</html>

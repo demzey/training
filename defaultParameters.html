@@ -1,0 +1,35 @@
+<html>
+
+<script>
+
+// Default Parameters
+
+let plusSomething = (x, y = 5) => {
+
+    x + y;
+
+    console.log(x + y);
+
+}
+
+plusSomething(250,250);
+
+//.includes -> check value inside an array
+let anArray = [15, 25, 30];
+
+console.log(anArray.includes(15));
+
+//String Padding
+
+const space = "5";
+console.log(space.padStart(3, '#'));
+
+const phoneNumber = '09451159319';
+const last4Digits = phoneNumber.slice(-4);
+const maskedNumber = last4Digits.padStart(phoneNumber.length, '#');
+
+console.log(maskedNumber);
+
+</script>
+
+</html>

@@ -1,0 +1,39 @@
+<html>
+
+
+<input id="newId" type="button" value="Hi!">
+<script>
+
+// let addPig = () => {
+//     let num = 0;
+
+//     for (let p = 0; p <= 1; p++) {
+//         num += 1;
+//         console.log('Pig Count is ' + num);
+//     }
+// }
+
+let newFunc1 = () => {
+    alert('Who are you?');
+}
+
+let newFunc2 = () => {
+    alert('What is your Name?');
+}
+
+
+
+newId.onClick = () => console.log('Hello');
+newId.addEventListener("click", newFunc1)
+newId.addEventListener("click", newFunc2);
+
+</script>
+
+
+
+
+
+
+<!-- <input type="button" onClick="addPig()" value="New Pig added!"> -->
+
+</html>

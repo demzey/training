@@ -1,0 +1,49 @@
+<html>
+
+<script>
+
+const cards = [[1, 2, 3, 4, 5, 6, 8, 9, 10, 'J', 'Q', 'K'],[1, 2, 3, 4, 5, 6, 8, 9, 10, 'J', 'Q', 'K'],[1, 2, 3, 4, 5, 6, 8, 9, 10, 'J', 'Q', 'K'],[1, 2, 3, 4, 5, 6, 8, 9, 10, 'J', 'Q', 'K']]
+
+const drawCards = () => {
+
+// J = 'J' === 10;
+// Q = 'Q' === 10;
+// K = 'K' === 10;
+
+let randomCards = cards[(Math.floor(Math.random() * 3))][(Math.floor(Math.random() * 13))];
+
+let randomCards1 = cards[(Math.floor(Math.random() * 3))][(Math.floor(Math.random() * 13))];
+
+//let draw = cards.splice(randomCards,1);
+
+//(Math.floor(Math.random() * 4)), (Math.floor(Math.random() * 14))
+
+    // if (randomCards == 'K') {
+    //     randomCards = 10;
+    // } else if (randomCards == 'Q') {
+    //     randomCards = 10;
+    // } else if (randomCards == 'J') {
+    //     randomCards = 10;
+    // } else {
+    // }
+    
+let sumCards = randomCards + randomCards1;
+
+    if (sumCards >= 10) {
+        sumCards -= 10;
+    }
+
+// last code
+//sumCards.includes('J' || 'Q' || 'K') {}
+
+alert(`You draw ${randomCards} and ${randomCards1}
+
+You hand have ${sumCards}`);
+
+}
+
+</script>
+
+<input onClick="drawCards()" type="button" value="Deal">
+
+</html>

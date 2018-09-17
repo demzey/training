@@ -1,0 +1,60 @@
+<html>
+
+<!-- <script>
+
+let newFunc = (num1, num2, num3) => {
+    for (let i = 0; i < newFunc.length; i++) {
+        if (i === 1) {
+            num1 = num1 + i;
+            num2 = num2 + i;
+            num3 = num3 + i;
+        }
+        else if (i === 2) {
+            num1 = num1 + i;
+            num2 = num2 + i;
+            num3 = num3 + i;
+        }
+        else {
+            num1 = num1 + i;
+            num2 = num2 + i;
+            num3 = num3 + i;
+        }
+        
+        console.log(i, num1, num2, num3);
+    }
+    
+}
+newFunc(2, 8, 4);
+
+
+</script> -->
+
+
+
+<script>
+
+let newFunc = (num1, num2, num3) => {
+    for (let i = 0; i < 10; i++) {
+        // if i is an even number. the value of i will be added to num1, num2 and num3
+        if (i % 2 === 0) {
+            num1 = num1 + i;
+            num2 = num2 + i;
+            num3 = num3 + i;
+            alert(`${i} is even, ${i} will be added to num1, num2 & num3. The new value is ${num1}, ${num2} and ${num3}`);
+        //else num1, num2 and num3 will be deducted by i
+        } else {
+            num1 = num1 - i;
+            num2 = num2 - i;
+            num3 = num3 - i;
+            alert(`${i} is odd, ${i} will deducted to num1, num2 & num3. The new value is ${num1}, ${num2} and ${num3}`);
+        }
+        // console.log(i, num1, num2, num3);
+    }
+    
+}
+newFunc(5, 3, 9);
+
+
+</script>
+
+</html>
